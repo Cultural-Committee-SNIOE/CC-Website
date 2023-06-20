@@ -1,18 +1,20 @@
 import Head from "next/head";
 import '../styles/root/globals.scss'
+import Navbar from "@/components/Navbar/Navbar";
 function MyApp({ Component , pageProps}) {
     const getLayout = Component.getLayout || ((page) => page);
 
     return (
         <>
             <Head>
-                <title>Surge 2023</title>
+                <title>Cultural Committee</title>
                 <meta
                     name="description"
-                    content="Shiv Nadar IOE's annual Sports Fest"
+                    content="Cultural Committee of Shiv Nadar IOE"
                 />
                 <link rel="icon" href="/Images/Favicon.png" />
             </Head>
+            <Navbar />
             {getLayout(<Component {...pageProps} />)}
         </>
     );

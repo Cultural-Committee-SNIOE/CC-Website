@@ -1,0 +1,138 @@
+.NavbarContainer {
+  margin-top: 1.5rem;
+  @include make-flex($dir: row, $align: center, $just: space-evenly);
+  @include respondAt(915px) {
+    min-height: 4rem;
+    padding: 0.75rem 1rem;
+    @include make-flex($dir: column, $just: flex-start, $align: center);
+  }
+  &__logos {
+    @include make-flex($dir: row, $align: center, $just: center);
+    &--snioeLogo {
+      border-right: 0.5px solid rgba(255, 255, 255, 0.53);
+      padding-right: 0.5rem;
+      margin-right: 0.5rem;
+
+      img {
+        @include box($width: 9rem);
+        @include respondAt(915px) {
+          @include box($width: 6rem);
+        }
+      }
+    }
+
+    &--ccLogo {
+      img {
+        @include box($width: 9rem);
+        @include respondAt(915px) {
+          @include box($width: 6rem);
+          margin-right: 3rem;
+        }
+      }
+    }
+    &--Hamburger {
+      display: none;
+      overflow: hidden;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+
+      @include respondAt(915px) {
+        display: block;
+      }
+
+      &--svg {
+        transition: translate 0.5s, rotate 0.5s;
+      }
+
+      &[aria-expanded="true"] &--svg {
+        translate: 2.5px -2.5px;
+        rotate: 0.125turn;
+      }
+
+      &--line {
+        transition: 0.5s;
+        stroke-dasharray: 60 31 60 300;
+      }
+
+      &[aria-expanded="true"] &--line {
+        stroke-dasharray: 60 105 60 300;
+        stroke-dashoffset: -90;
+      }
+    }
+  }
+
+  &__pages {
+    @include make-flex($dir: row, $align: center, $just: center);
+    &-open {
+      display: none;
+    }
+    @include respondAt(915px) {
+      display: none;
+
+      &-open {
+        display: block;
+        @include make-flex($dir: column, $just: flex-start, $align: center);
+      }
+    }
+    &--item {
+      padding: 0.3rem 2rem;
+      text-align: center;
+      border: 0.788078px solid #404458;
+      border-radius: 28.3708px;
+      color: white;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      font-weight: 500;
+      font-size: 0.88rem;
+      margin: 0 0.5rem 0 0.5rem;
+      @include respondAt(915px) {
+        @include box($width: 7rem);
+        padding: 0.5rem 2rem;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+    }
+  }
+
+  &__links {
+    @include make-flex($dir: row, $align: center, $just: center);
+    &-open {
+      display: none;
+    }
+    @include respondAt(915px) {
+      display: none;
+
+      &-open {
+        display: block;
+        @include make-flex($dir: column, $just: flex-start, $align: center);
+      }
+    }
+    &--itemWebsite {
+      color: white;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      padding: 0.5rem 2rem;
+      background: #154fff;
+      font-size: 0.88rem;
+      text-align: center;
+      @include respondAt(915px) {
+        @include box($width: 7rem);
+        padding: 0.5rem 2rem;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+    }
+
+    &--itemLogin {
+      color: white;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      padding: 0.45rem 2rem;
+      font-size: 0.88rem;
+      border: 1px solid #ffffff;
+      margin: 0 0.5rem 0 1rem;
+      text-align: center;
+      @include respondAt(915px) {
+        @include box($width: 7rem);
+        padding: 0.5rem 2rem;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+    }
+  }
+}
