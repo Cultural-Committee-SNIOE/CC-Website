@@ -9,7 +9,7 @@ function StatsSection() {
                 <p className='StatsContainer__top--left__heading'>Data-Driven Insights<br />for our Cultural Events</p>
             </div>
             <div className='StatsContainer__top--right'>
-                <p className='StatsContainer__top--right__description'>Highlighting the success and impact of the events organized by the committee & demonstrates the committee's commitment to promoting cultural diversity.</p>
+                <p className='StatsContainer__top--right__description'>Highlighting the success and impact of the events organized by the committee & demonstrates the committee&apos;s commitment to promoting cultural diversity.</p>
             </div>
         </div>
         <div className='StatsContainer__bottom'>
