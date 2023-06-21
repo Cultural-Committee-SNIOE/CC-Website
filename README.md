@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CC - Website
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+## Setup and local deployment
+Clone the website
+```
+git clone https://github.com/Cultural-Committee-SNIOE/CC-Website.git
+```
+Install the modules
+```
+npm i
+```
+Start the server
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
+Create a new branch
+```
+git checkout -b feat/<branch-name>
+```
+Create a commit with a message
+```
+git commit -am "<commit-message>"
+```
+Push the branch
+```
+git push origin feat/<branch-name>
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Branch Naming Convention
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+When creating a new branch for a feature, bug fix, or any other development task, follow this naming convention:
 
-## Learn More
+```bash
+<type>/<short_description>
+```
 
-To learn more about Next.js, take a look at the following resources:
+- `<type>`: The type of the task (e.g., feature, bug, hotfix, refactor, etc.).
+- `<short_description>`: A brief description of the task, using hyphens (-) to separate words.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Examples:
+- `feature/user-login`
+- `bug/homepage-crash`
+- `refactor/database-utils`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Commit Message Format
 
-## Deploy on Vercel
+For commit messages, follow this format:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+<type>: <subject>
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `<type>`: The type of the commit (e.g., feat, fix, docs, refactor, chore, etc.).
+- `<subject>`: A brief description of the change in the commit.
+
+Examples:
+- `feat: Add user authentication`
+- `fix: Fix null pointer exception in homepage`
+- `docs: Update README with project setup instructions`
+
+
+
+
+
+
+
+
+
+
