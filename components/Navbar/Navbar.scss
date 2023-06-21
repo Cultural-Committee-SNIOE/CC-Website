@@ -1,9 +1,19 @@
+.NavbarWrapper {
+  position: fixed;
+  z-index: 100;
+  @include box(100vw, auto);
+  border-radius: 10px;
+
+}
 .NavbarContainer {
-  margin-top: 1.5rem;
+  background-color: rgb(0 0 0 / 50%);
+  min-height: 4.5rem;
+  border-radius: 20px;
   @include make-flex($dir: row, $align: center, $just: space-evenly);
   @include respondAt(915px) {
-    min-height: 4rem;
-    padding: 0.75rem 1rem;
+        min-height: 3.5rem;
+        padding-top: 20px;
+        border-radius: 20px;
     @include make-flex($dir: column, $just: flex-start, $align: center);
   }
   &__logos {

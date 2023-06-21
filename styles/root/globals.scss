@@ -1,4 +1,30 @@
-@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
 * {
-    background-color: #0E0E12;
+  background-color: #0e0e12;
+}
+
+.HeroSection {
+  position: relative;
+  padding-top: 4rem;
+    height: 100vh;
+  &__image1 {
+    position: absolute;
+    width: 30rem;
+    background: none;
+    left: 59rem;
+    // z-index: -1;
+    @include respondAt(915px) {
+      display: none;
+    }
+  }
+  &__image2 {
+    position: absolute;
+    width: 30rem;
+    background: none;
+    @include respondAt(915px) {
+    //   display: none;
+    width: 15rem;
+    left: -1rem;
+    }
+  }
 }
