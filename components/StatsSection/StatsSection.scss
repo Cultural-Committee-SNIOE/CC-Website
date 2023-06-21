@@ -1,0 +1,127 @@
+.StatsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include respondAt(915px) {
+    flex-direction: column;
+    // display: none;
+    margin-top: 17rem;
+  }
+  &__top {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include respondAt(915px) {
+        flex-direction: column;
+        // width: 80vw;
+    }
+    &--left {
+      &__hashtag {
+        color: rgba(21, 79, 255, 1);
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: white;
+        // padding: 0.5rem 1rem;
+        width: 22rem;
+        padding-top : 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        @include respondAt(915px) {
+            font-size: 1rem;
+            width: 16rem;
+        }
+      }
+      &__heading {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        color: #ffffff;
+        width: 30rem;
+        @include respondAt(915px) {
+            font-size: 2rem;
+            width: 20rem;
+        }
+      }
+    }
+    &--right {
+      margin-top: 6.7rem;
+      @include respondAt(915px) {
+        margin-top: 0;
+      }
+      &__description {
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 1.3rem;
+        color: #7d7d7d;
+        width: 35rem;
+        @include respondAt(915px) {
+            font-size: 1rem;
+            width: 20rem;
+            margin-top: 0;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    @include respondAt(915px) {
+        flex-direction: column-reverse;
+    }
+    &--video {
+        margin-right: 5rem;
+        margin-left: 4rem;
+        iframe {
+            @include respondAt(915px) {
+                width: 20rem;
+            }
+        }
+    }
+    &--stats {
+      display: flex;
+      flex-wrap: wrap;
+      @include respondAt(915px) {
+            margin-left: 1.5rem;
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        @include respondAt(915px) {
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+      }
+        &--value {
+          color: white;
+          font-size: 6rem;
+          font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+          @include respondAt(915px) {
+            font-size: 3rem;
+          }
+        }
+        &--title {
+          color: white;
+          font-size: 2rem;
+          font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 100;
+          @include respondAt(915px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
