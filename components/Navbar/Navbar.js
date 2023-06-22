@@ -57,13 +57,14 @@ function Navbar() {
           )}
         </div>
         <div
-          className={`NavbarContainer__pages ${
-            navState ? "NavbarContainer__pages-open" : ""
-          }`}
+          className={`NavbarContainer__pages ${navState ? "NavbarContainer__pages-open" : ""
+            }`}
         >
-          <p className="NavbarContainer__pages--item">Home</p>
-          <Link href="/ClubPage/ClubPage">
-            <span className="NavbarContainer__pages--item">Clubs</span>
+          <Link href='/'>
+            <p className="NavbarContainer__pages--item">Home</p>
+          </Link>
+          <Link href='/clubPage'>
+            <p style={{ "textDecoration": "none" }} className="NavbarContainer__pages--item">Clubs</p>
           </Link>
           <p className="NavbarContainer__pages--item">Room Booking</p>
           <p className="NavbarContainer__pages--item">About Us</p>
@@ -71,9 +72,8 @@ function Navbar() {
           <p className="NavbarContainer__pages--item">Contact</p>
         </div>
         <div
-          className={`NavbarContainer__links ${
-            navState ? "NavbarContainer__links-open" : ""
-          }`}
+          className={`NavbarContainer__links ${navState ? "NavbarContainer__links-open" : ""
+            }`}
         >
           <p className="NavbarContainer__links--itemWebsite">Official Website</p>
           <p className="NavbarContainer__links--itemLogin">Login</p>
