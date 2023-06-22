@@ -1,0 +1,141 @@
+.ClubPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respondAt(915px) { // iPhone 12 Pro width: 390px
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__bluebox {
+        margin-top: 7rem;
+        background-color: #154FFF;
+        width: 94vw;
+        display: flex;
+        flex-direction: row;
+        height: 23.5vw;
+        border-radius: 1rem;
+        align-self: center;
+
+        @include respondAt(915px) { // iPhone 12 Pro width: 390px
+            width: auto;
+            height: auto;
+            flex-direction: column;
+        }
+
+        &__left {
+            margin-left: 3rem;
+            margin-top: 0.8rem;
+            background-color: #154FFF;
+            flex-direction: column;
+
+            &--hashtag {
+                color: rgba(21, 79, 255, 1);
+                font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2rem;
+                background-color: #E7EBFD;
+                width: 18rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 1rem;
+                border-radius: 0.5rem;
+
+                @include respondAt(915px) { // iPhone 12 Pro width: 390px
+                    font-size: 1rem;
+                    width: 16rem;
+                    margin-left: 2rem;
+                }
+            }
+
+            &--heading {
+                margin-top: -0.2rem;
+                background-color: #154FFF;
+                color: rgba(255, 255, 255, 1);
+                font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 2.8rem;
+                line-height: 3.5rem;
+                // width: 30rem;
+
+                @include respondAt(915px) { // iPhone 12 Pro width: 390px
+                    font-size: 1.8rem;
+                    width: 28rem;
+                    margin-left: 2rem;
+
+                }
+            }
+        }
+
+        &__right {
+            background-color: #154FFF;
+            flex-direction: column;
+
+            &--para {
+                margin-top: 8rem;
+                margin-left: 9rem;
+                width: 31rem;
+                background-color: #154FFF;
+                color: rgba(255, 255, 255, 0.8);
+                font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+                font-style: normal;
+                font-weight: 100;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+
+                @include respondAt(915px) { // iPhone 12 Pro width: 390px
+                    margin: 0;
+                    margin-left: 2rem;
+                    font-size: 1.0rem;
+                    // text-align: center;
+                    align-self: center;
+                    justify-content: center;
+                    display: flex;
+                }
+            }
+
+            &--searchBar {
+                background-color: white;
+                width: 30rem;
+                margin-left: 9rem;
+                height: 2.2rem;
+                display: flex;
+
+                @include respondAt(915px) { // iPhone 12 Pro width: 390px
+                    width: 24rem;
+                    margin-left: 5rem;
+                    align-self: center;
+                    margin-top: 1rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                &--text {
+                    color: rgba(0, 0, 0, 0.6);
+                    background-color: white;
+                    align-self: center;
+                    justify-content: center;
+                    margin-left: 1rem;
+                    font-style: normal;
+                }
+
+                svg {
+                    // Add styles to control the size and color of the search icon
+                    width: 20px;
+                    height: 20px;
+                    fill: white;
+                    background-color: white;
+                    margin-left: 18rem;
+                    margin-top: 0.38rem;
+                    color: rgba(0, 0, 0, 0.6);
+
+                    @include respondAt(915px) { // iPhone 12 Pro width: 390px
+                        margin-left: 12rem;
+                    }
+                }
+            }
+        }
+    }
+}
