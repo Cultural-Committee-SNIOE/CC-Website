@@ -1,28 +1,52 @@
 .FooterContainer{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // color: #000;
+
     &__main{
 
-
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
+        
         &--comp{
-
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-evenly;
+            background-color: #FFFFFF;
+            
             &__heading{
-
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 27px;
             }
-
+            
             &__text{
-
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
             }
         }
     }
 
     &__divider{
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #FFFFFF;
         &--line{
-
+            width: 90%;
+            height: 1px;
+            background-color: #000;
         }
 
         &--text{
-            
+            font-family: 'neue-haas-grotesk-display', sans-serif;
         }
     }
 }

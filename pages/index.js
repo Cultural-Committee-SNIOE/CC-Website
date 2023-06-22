@@ -2,6 +2,7 @@ import Demo from '@/components/Demo/Demo'
 import HeroSection from '@/components/HeroSection/HeroSection'
 import StatsSection from '@/components/StatsSection/StatsSection'
 import Image from 'next/image'
+import Footer from '@/components/Footer/Footer'
 // import styles from './page.module.css'
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
             </section>
             <section className='StatsSection'>
                 <StatsSection />
+            </section>
+            <section className='FooterSection'>
+                <Footer />
             </section>
         </main>
     )

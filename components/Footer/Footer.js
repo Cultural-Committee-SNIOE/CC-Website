@@ -2,7 +2,11 @@ import './Footer.scss'
 
 export default function Footer() {
     return(
-        <div className='FooterContainer'>
+        <div className='FooterContainer' 
+            // style={{
+            //     backgroundColor: '#FFFFFF',
+            // }}
+        >
             <div className='FooterContainer__main'>
                 <div className='FooterContainer__main--comp'>
 
