@@ -1,0 +1,95 @@
+.ClubsAndSocsCardContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border: 0.5px solid white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    @include respondAt(915px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &--imagCont {
+      margin-right: 1rem;
+      @include respondAt(915px) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      &__image {
+        width: 4rem;
+      }
+    }
+    &--introCont {
+      @include respondAt(915px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__name {
+        margin-bottom: 0.5rem;
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+        @include respondAt(915px) {
+          margin: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+      &__desc {
+        // margin-top: 0.5rem;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+        font-weight: 200;
+        margin: 0;
+      }
+    }
+  }
+  &__middle {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+    font-weight: 100;
+    width: 25rem;
+    @include respondAt(915px) {
+        width: 18rem;
+        text-align: center;
+    }
+  }
+  &__bottom {
+    display: flex;
+    @include respondAt(915px) {
+        flex-direction: column;
+
+    }
+    &--explore {
+      color: #fff;
+      text-align: center;
+      font-size: 1rem;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      font-weight: 600;
+      background-color: #154fff;
+      padding: 0.5rem 2rem;
+      margin-right: 1rem;
+      @include respondAt(915px) {
+        margin-right: 0;
+      }
+    }
+    &--learn {
+      color: #fff;
+      text-align: center;
+      font-size: 1rem;
+      font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+    }
+  }
+}

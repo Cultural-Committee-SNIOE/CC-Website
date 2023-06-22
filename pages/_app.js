@@ -1,7 +1,8 @@
 import Head from "next/head";
 import '../styles/root/globals.scss'
 import Navbar from "@/components/Navbar/Navbar";
-function MyApp({ Component , pageProps}) {
+import Footer from '@/components/Footer/Footer'
+function MyApp({ Component, pageProps }) {
     const getLayout = Component.getLayout || ((page) => page);
 
     return (
@@ -16,6 +17,9 @@ function MyApp({ Component , pageProps}) {
             </Head>
             <Navbar />
             {getLayout(<Component {...pageProps} />)}
+            <section className='FooterSection'>
+                <Footer />
+            </section>
         </>
     );
 }
