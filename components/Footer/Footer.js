@@ -2,14 +2,19 @@ import './Footer.scss'
 
 export default function Footer() {
     return(
-        <div className='FooterContainer' 
-            // style={{
-            //     backgroundColor: '#FFFFFF',
-            // }}
-        >
+        <div className='FooterContainer' >
             <div className='FooterContainer__main'>
                 <div className='FooterContainer__main--comp'>
-
+                    <div>
+                        <img src="Images/Utils/cc_logo.png" className='FooterContainer__main--comp__logo' />
+                    </div>
+                    <p className='FooterContainer__main--comp__text'>Cultural Committee, SNIoE</p>
+                    <div className='FooterContainer__main--comp__social'>
+                        <img src="Images/Utils/instagram.png"/>
+                        <img src="Images/Utils/facebook.png"/>
+                        <img src="Images/Utils/twitter.png"/>
+                        <img src="Images/Utils/linkedin.png"/>
+                    </div>
                 </div>
                 <div className='FooterContainer__main--comp'>
                     <h3 className='FooterContainer__main--comp__heading'>Pages</h3>
@@ -42,6 +47,10 @@ export default function Footer() {
                 <div className='FooterContainer__main--comp'>
                     <h3 className='FooterContainer__main--comp__heading'>About Us</h3>
                     <p className='FooterContainer__main--comp__text'>You can contact us to send email</p>
+                    <div className='FooterContainer__main--comp__contact'>
+                        <input type='text' placeholder='Email' className='FooterContainer__main--comp__contact__input' />
+                        <button className='FooterContainer__main--comp__contact__button'><img src='Images/Utils/send.png'/></button>
+                    </div>
                 </div>
             </div>
 
