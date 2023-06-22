@@ -43,7 +43,7 @@ function ClubsAndSocsCard() {
     return (
         clubDetails.map((item) => {
             return (
-            <div className="ClubsAndSocsCardContainer">
+            <div key={item.name} className="ClubsAndSocsCardContainer">
                 <div className="ClubsAndSocsCardContainer__top">
                     <div className="ClubsAndSocsCardContainer__top--imagCont">
                         <img className="ClubsAndSocsCardContainer__top--imagCont__image" src={item.image} />
