@@ -70,21 +70,33 @@
             &__contact{
                 display: flex;
                 flex-direction: row;
-                input[type="text"]{
+
+                &__input{
                     border: 1px solid #000;
                     border-radius: 50px;
                     outline: none;
                     padding: 10px;
                     font-size: 20px;
                     font-family: 'Roboto', sans-serif;
+
+                    @include respondAt(915px) {
+                        font-size: 15px;
+                        padding: 5px;
+                    }
                 }
-                button{
+
+                &__button{
                     border: 1px solid #000;
                     border-radius: 100px;
                     outline: none;
                     font-size: 20px;
                     margin-left: 10px;
                     cursor: pointer;
+
+                    @include respondAt(915px) {
+                        font-size: 15px;
+                    }
+
                 }
                 img{
                     height: 30px;

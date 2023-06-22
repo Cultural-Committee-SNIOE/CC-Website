@@ -120,7 +120,7 @@
       color: white;
       font-family: "Neue Haas Grotesk Display Pro", sans-serif;
       padding: 0.5rem 2rem;
-      background: #154fff;
+      background: #154fff !important;
       font-size: 0.88rem;
       text-align: center;
       @include respondAt(915px) {

@@ -15,7 +15,9 @@ function MyApp({ Component, pageProps }) {
                 />
                 <link rel="icon" href="/Images/Favicon.png" />
             </Head>
-            <Navbar />
+            <section className='NavbarSection'>
+                <Navbar />
+            </section>
             {getLayout(<Component {...pageProps} />)}
             <section className='FooterSection'>
                 <Footer />

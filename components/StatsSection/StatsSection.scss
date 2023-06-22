@@ -71,6 +71,7 @@
   }
   &__bottom {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 90vw;
@@ -88,6 +89,7 @@
     }
     &--stats {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       @include respondAt(915px) {
             margin-left: 1.5rem;
@@ -95,14 +97,14 @@
       &__item {
         display: flex;
         flex-direction: column;
-        margin-right: 3rem;
+        margin-right: 1.9rem;
         @include respondAt(915px) {
             margin-right: 2rem;
             margin-bottom: 2rem;
       }
         &--value {
           color: white;
-          font-size: 6rem;
+          font-size: 5rem;
           font-family: "Neue Haas Grotesk Display Pro", sans-serif;
           margin-top: 0;
           margin-bottom: 0;
