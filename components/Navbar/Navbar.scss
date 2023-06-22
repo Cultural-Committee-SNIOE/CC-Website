@@ -22,9 +22,10 @@
       border-right: 0.5px solid rgba(255, 255, 255, 0.53);
       padding-right: 0.5rem;
       margin-right: 0.5rem;
-
+      background: none;
       img {
         @include box($width: 9rem);
+        background: none;
         @include respondAt(915px) {
           @include box($width: 6rem);
         }
@@ -34,6 +35,7 @@
     &--ccLogo {
       img {
         @include box($width: 9rem);
+        background: none;
         @include respondAt(915px) {
           @include box($width: 6rem);
           margin-right: 3rem;

@@ -44,14 +44,14 @@ export default function Footer() {
                     <p className='FooterContainer__main--comp__text'>Privacy Policy</p>
                     <p className='FooterContainer__main--comp__text'>Terms of Service</p>
                 </div>
-                <div className='FooterContainer__main--comp'>
+                {/* <div className='FooterContainer__main--comp'>
                     <h3 className='FooterContainer__main--comp__heading'>About Us</h3>
                     <p className='FooterContainer__main--comp__text'>You can contact us to send email</p>
                     <div className='FooterContainer__main--comp__contact'>
                         <input type='text' placeholder='Email' className='FooterContainer__main--comp__contact__input' />
                         <button className='FooterContainer__main--comp__contact__button'><img src='Images/Utils/send.png'/></button>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className='FooterContainer__divider'>
