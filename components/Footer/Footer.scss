@@ -10,6 +10,12 @@
         flex-direction: row;
         justify-content: space-evenly;
         background-color: #FFFFFF;
+
+        @include respondAt(915px) {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 25px;
+        }
         
         &--comp{
             display: flex;
@@ -22,19 +28,31 @@
             
             &__heading{
                 font-family: 'Inter', sans-serif;
-                font-weight: 400;
+                font-weight: 500;
                 font-size: 27px;
+
+                @include respondAt(915px) {
+                    font-size: 20px;
+                }
             }
             
             &__text{
                 font-family: 'Roboto', sans-serif;
                 font-size: 20px;
+
+                @include respondAt(915px) {
+                    font-size: 15px;
+                }
             }
 
             &__logo{
                 width: 150px;
                 height: auto;
                 margin-top: 25px;
+
+                @include respondAt(915px) {
+                    width: 100px;
+                }
             }
 
             &__social{
@@ -94,6 +112,10 @@
         &--text{
             font-family: 'neue-haas-grotesk-display', sans-serif;
             font-size: 23.77px;
+
+            @include respondAt(915px) {
+                font-size: 15px;
+            }
         }
     }
 }
