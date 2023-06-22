@@ -6,7 +6,7 @@ export default function Footer() {
             <div className='FooterContainer__main'>
                 <div className='FooterContainer__main--comp'>
                     <div>
-                        <img src="Images/Utils/cc_logo.png" className='FooterContainer__main--comp__logo' />
+                        <img src="Images/Utils/ccFooter.png" className='FooterContainer__main--comp__logo' />
                     </div>
                     <p className='FooterContainer__main--comp__text'>Cultural Committee, SNIoE</p>
                     <div className='FooterContainer__main--comp__social'>
