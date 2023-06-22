@@ -3,6 +3,12 @@
   background-color: #0e0e12;
 }
 
+.FooterSection *{
+  background-color: #FFF !important;
+}
+
+
+
 .HeroSection {
   // position: relative;
   padding-top: 4rem;
@@ -11,7 +17,7 @@
     position: absolute;
     width: 30rem;
     background: none;
-    left: 59rem;
+    left: 55rem;
     // z-index: -1;
     @include respondAt(915px) {
       display: none;
