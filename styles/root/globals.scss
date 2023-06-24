@@ -21,7 +21,7 @@ a:active {
     position: absolute;
     width: 30rem;
     background: none;
-    left: 55rem;
+    left: 63rem;
     // z-index: -1;
     @include respondAt(915px) {
       display: none;
