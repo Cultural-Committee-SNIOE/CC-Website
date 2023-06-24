@@ -63,15 +63,10 @@ model RoomBook {
 // }
 
 // model RoomBook{
-//     // on which date
-//     date String
-//     // When is the booking
-//     time Float 
-//     // How long is the booking
 //     duration Float
 //     // Which corresponds to bookingId can use this to delete the booking after the time is over
 //     bookingId String @id @default(uuid())
-//     room Room @relation(fields: [roomId], references: [id])
+//     room AvailableRoom @relation(fields: [roomId], references: [roomId])
 //     // What room
 //     roomId String
 //     club Club @relation(fields: [clubId], references: [id])
