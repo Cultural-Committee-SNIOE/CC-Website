@@ -3,9 +3,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: #154fff;
-  margin: 0.5rem auto;
+  margin: 0.5rem 2rem;
   border-radius: 0.5rem;
-  width: 90%;
   //   margin-top: 5rem;
   @include respondAt(915px) {
     // iPhone 12 Pro width: 390px
@@ -77,8 +76,7 @@
           margin-left: 0rem;
           width: 20rem;
           margin-bottom: 0.5rem;
-        line-height: 2.5rem;
-
+          line-height: 2.5rem;
         }
       }
     }
@@ -90,21 +88,18 @@
       margin-right: 60px;
 
       &--para {
-        margin-top: 5.8em;
-        margin-left: 9rem;
+        margin-top: 10rem;
+        margin-left: 7rem;
         color: rgba(255, 255, 255, 0.8);
         font-family: "Neue Haas Grotesk Display Pro", sans-serif;
         font-style: normal;
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.5rem;
 
         @include respondAt(915px) {
-          // iPhone 12 Pro width: 390px
-          //   margin: 0;
           margin-left: 4rem;
           font-size: 1rem;
-          // text-align: center;
           align-self: center;
           justify-content: center;
           display: flex;
@@ -116,7 +111,7 @@
       &--searchBar {
         background-color: white;
         width: 30rem;
-        margin-left: 9rem;
+        margin-left: 7rem;
         height: 2.2rem;
         display: flex;
         // border-radius: 50px;
