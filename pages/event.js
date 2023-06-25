@@ -1,4 +1,4 @@
-import HeroSectionEvent from "@/components/HeroSection2/HeroSectionEvent";
+import HeroSectionEvent from "@/components/HeroSectionEvent/HeroSectionEvent";
 import ClubEventCard from "@/components/ClubEventCard/ClubEventCard";
 function Event()
 {
