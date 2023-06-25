@@ -7,7 +7,7 @@ function ClubPageHeader()
             <div className="ClubPageContainer__bluebox">
                 <div className="ClubPageContainer__bluebox__left">
                     <p className='ClubPageContainer__bluebox__left--hashtag'>#BeApartOfSomethingBigger</p>
-                    <p className='ClubPageContainer__bluebox__left--heading'>Find your tribe and unlock newopportunities for personal and professional growth!</p>
+                    <p className='ClubPageContainer__bluebox__left--heading'>Find your tribe and unlock new opportunities for personal and professional growth!</p>
                 </div>
                 <div className='ClubPageContainer__bluebox__right'>
                     <p className='ClubPageContainer__bluebox__right--para'>Welcome to our college clubs community! Find your passion and explore new interests with our diverse range<br/>of clubs. Connect with like-minded individuals and create<br/>unforgettable memories. Join us today and unlock new opportunities for personal and professional growth. </p>
