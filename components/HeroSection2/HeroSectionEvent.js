@@ -17,6 +17,7 @@ const HeroSectionEvent = () => {
                     <p className="HeroSection-subpara-content">
                         Welcome to our college clubs community! Find your passion and explore new interests with our diverse range of clubs.
                         Connect with like-minded individuals and create unforgettable memories. Join us today and unlock new opportunities for personal and professional growth.
+
                     </p>
                 </div>
                 <div className="HeroSection-buttonrow">
