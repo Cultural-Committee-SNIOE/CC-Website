@@ -29,8 +29,6 @@ const HeroSectionEvent = () => {
                     </p>
                 </div>
             </div>
-            {/*<img src='/Images/Events/color_element.png' className='HeroSection-mainpara-color-element' />*/}
-            {/*<img src='/Images/Events/color_element_2.png' className='HeroSection-mainpara-color-element2' />*/}
         </div>
     );
 };
