@@ -1,4 +1,3 @@
-import React from 'react';
 import './HeroSectionEvent.scss'
 import { IoIosArrowRoundForward } from "react-icons/io";
 const HeroSectionEvent = () => {
