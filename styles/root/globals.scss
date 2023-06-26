@@ -21,12 +21,12 @@ a:active {
 .HeroSection {
   // position: relative;
   padding-top: 4rem;
-  height: 100vh;
+  // height: 100vh;
   &__image1 {
     position: absolute;
     width: 30rem;
     background: none;
-    left: 63rem;
+    left: 55rem;
     // z-index: -1;
     @include respondAt(915px) {
       display: none;
