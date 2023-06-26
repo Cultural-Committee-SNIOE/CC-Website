@@ -6,7 +6,13 @@ body {
   margin-right: 0px;
 }
 
-
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
 .FooterSection * {
   background-color: #fff !important;
@@ -21,12 +27,14 @@ a:active {
 .HeroSection {
   // position: relative;
   padding-top: 4rem;
-  // height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
   &__image1 {
     position: absolute;
     width: 30rem;
     background: none;
-    left: 55rem;
+    left: 59rem;
     // z-index: -1;
     @include respondAt(915px) {
       display: none;
@@ -36,6 +44,7 @@ a:active {
     position: absolute;
     width: 30rem;
     background: none;
+    left: 0rem;
     @include respondAt(915px) {
       //   display: none;
       width: 15rem;

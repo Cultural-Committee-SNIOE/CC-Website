@@ -1,67 +1,86 @@
 import './Spons.scss'
 
 function Spons() {
-    const SponsLogo = [
-        {
-            "image": 'Images/Spons/sLogo.png',  },
-        {
-            "image": 'Images/Spons/sLogo.png',  },    
-        {
-            "image": 'Images/Spons/sLogo.png'   },
-        {
-            "image": 'Images/Spons/sLogo.png'   },           
-        {
-            "image": 'Images/Spons/sLogo.png'   },                 
-        {
-            "image": 'Images/Spons/sLogo.png'   }, 
-        {     
-            "image": 'Images/Spons/sLogo.png'   }, 
-        {     
-            "image": 'Images/Spons/sLogo.png'   },     
-            
-    ];  const infiniteScroll = () => {
-        const lastLogo = SponsLogo[SponsLogo.length - 1];
-        const firstLogo = SponsLogo[0];
-    
-        SponsLogo.push(lastLogo);
-        SponsLogo.unshift(firstLogo); 
-        if (SponsLogo.length > 8) {
-          SponsLogo.pop();
-          SponsLogo.shift();
-        }
-      };
-    
-      return (
-        
-        <div className="sponsors_out">
-          <div className='sponsors'>{SponsLogo.map((logo, index) => (
-            <img 
-              key={index}
-              src={logo.image}
-              alt="Sponsor Logo"
-              style={{ width: "100%" ,marginLeft: "63px" }}
-            />
-          ))} </div>
+  const SponsLogo = [
+    {
+      "image": 'Images/Spons/sLogo.png',
+    },
+    {
+      "image": 'Images/Spons/sLogo.png',
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
+    {
+      "image": 'Images/Spons/sLogo.png'
+    },
 
-            <div className='sponsors' >{SponsLogo.map((logo, index) => (
-            <img 
-              key={index}
-              src={logo.image}
-              alt="Sponsor Logo"
-              style={{ width: "100%", marginLeft: "63px", gap: "133.57px"}}
-            />
-          ))} </div>
+  ];
 
-            <div className='sponsors'>{SponsLogo.map((logo, index) => (
-            <img 
-              key={index}
-              src={logo.image}
-              alt="Sponsor Logo"
-              style={{ width: "100%",marginLeft: "63px" }}
-            />
-          ))} </div>
+  return (
+    <div className='Spons'>
+      <div className='Spons__parent'>
+        <div className='Spons__parent--element primary'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
         </div>
-      );
-    };
-    
-    export default Spons;
+        <div className='Spons__parent--element secondary'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
+        </div>
+      </div>
+      <div className='Spons__parent'>
+        <div className='Spons__parent--element primary1'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
+        </div>
+        <div className='Spons__parent--element secondary1'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
+        </div>
+      </div>
+      <div className='Spons__parent'>
+        <div className='Spons__parent--element primary2'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
+        </div>
+        <div className='Spons__parent--element secondary2'>
+          {SponsLogo.map((item) => {
+            return(
+              <img className='Spons__parent--element--image' src={item.image}/>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Spons;
