@@ -1,13 +1,17 @@
-import HeroSectionEvent from "@/components/HeroSection2/HeroSectionEvent";
-import '../components/HeroSection2/HeroSectionEvent.scss'
+import EventHeroSection from '@/components/EventHeroSection/EventHeroSection';
+
 import ClubEventCard from "@/components/ClubEventCards/ClubEventCard";
 function Event()
 {
     return(
-        <section className="HeroSectionContainer-event">
-            <HeroSectionEvent/>
-            <ClubEventCard/>
-        </section>
+        <div className="EventContainer">
+            <section>
+                <EventHeroSection/>
+            </section>
+            <section className="ClubEventCard">
+                <ClubEventCard/>
+            </section>
+        </div>
     )
 }
 
