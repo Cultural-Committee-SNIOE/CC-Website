@@ -56,7 +56,7 @@ export default function Footer() {
 
             <div className='FooterContainer__divider'>
                 <hr className='FooterContainer__divider--line' />
-                <p className='FooterContainer__divider--text'>© 2023 Cultural Committee, Shiv Nadar IoE</p>
+                <p className='FooterContainer__divider--text'>© 2023 Cultural Committee Shiv Nadar IoE</p>
             </div>
         </div>
     )
