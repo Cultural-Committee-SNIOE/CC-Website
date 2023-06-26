@@ -28,8 +28,8 @@
             
             &__heading{
                 font-family: 'Inter', sans-serif;
-                font-weight: 500;
-                font-size: 1.5rem;
+                font-weight: bold;
+                font-size: 1.3rem;
 
                 @include respondAt(915px) {
                     font-size: 20px;
