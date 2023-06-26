@@ -1,125 +1,71 @@
-.EventCard-tray{
-  //width: 12rem;
-  height: max-content;
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin-left: 1rem;
-  margin-bottom: 6rem;
+.ClubEventCard{
+  color: white;
 
-  @include respondAt(915px) {
+  &__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__card{
+    display: flex;
     flex-direction: column;
-    margin-left: 0rem;
-    height: max-content;
-    margin-bottom: 4rem;
+    align-items: center;
+    justify-content: left;
+    border-radius: 26px;
+    border: 1.115px solid #7B81A0;
+    width: 390px;
+    margin-bottom: 40px;
+    // padding: 10px auto;
+
+
+    &__heroimg{
+      img{
+        height: 175px;
+        width: auto;
+      }
+    }
+
+    &__club{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      &--logo{
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &__description{
+      font-size: 14px;
+      font-family: Neue Haas Grotesk Display Pro;
+
+      &--content{
+        width: 350px
+
+      }
+    }
+
+    &__details{
+      display: flex;
+      flex-direction: row;
+
+      &--container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__report{
+      &--button{
+        background-color: black;
+        height: 20px;
+      }
+    }
+
   }
 }
-
-.EventCard{
-  border-radius: 25.64px;
-  border: 1.115px solid #7B81A0;
-  background: #0E0E12;
-  color: white;
-  width: 22rem;
-  height: max-content;
-  display: flex;
-  padding: 32.329px 39.018px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-
-  @include respondAt(915px) {
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-    //padding: 12.329px 19.018px;
-  }
-
-}
-
-.EventCard-club_details__img1{
-
-  width: 22rem;
-  height: 15rem;
-
-}
-
-.EventCard-club_details__img2{
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.EventCard-club_details{
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-.EventCard-club_event-title{
-  color: #FFF;
-  font-size: 1.5rem;
-  font-family: Neue Haas Grotesk Display Pro;
-  font-weight: 700;
-}
-
-.EventCard-club_event-club{
-  color: #FFF;
-  font-size: 1rem;
-  font-family: Neue Haas Grotesk Display Pro;
-  font-weight: 500;
-}
-
-.EventCard-club_event-details{
-  display: flex;
-  flex-direction: column;
-}
-
-.EventCard-club_event{
-  position: relative;
-  top: -1.5rem;
-}
-
-.EventCard-club_name{
-  position: relative;
-  top: -3.5rem;
-}
-
-.EventCard-event_content{
-  margin-top: -5rem;
-  color: #FFF;
-  font-size: 17px;
-  font-family: Neue Haas Grotesk Display Pro;
-}
-
-.EventCard-event_details{
-  display: flex;
-  flex-direction: row;
-  margin-top: -2rem;
-}
-
-.EventCard-event_details-all{
-  color: #C5C5C5;
-  font-size: 17.955px;
-  font-family: Neue Haas Grotesk Display Pro;
-}
-
-.EventCard-event_details-out{
-  color: #FFF;
-  font-size: 17.955px;
-  font-family: Neue Haas Grotesk Display Pro;
-  font-weight: 600;
-}
-
-.EventCard-enterin{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.3rem;
-  background: #154fff;
-  color: white;
-  margin-top: -1.5rem;
-  width: 21rem;
-  justify-content: center;
-  border-radius: 6.461px;
-}
-
