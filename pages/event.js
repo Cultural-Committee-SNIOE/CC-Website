@@ -1,3 +1,4 @@
+
 import EventHeroSection from '@/components/EventHeroSection/EventHeroSection';
 
 import ClubEventCard from "@/components/ClubEventCards/ClubEventCard";
@@ -12,6 +13,7 @@ function Event()
                 <ClubEventCard/>
             </section>
         </div>
+
     )
 }
 

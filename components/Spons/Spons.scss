@@ -1,0 +1,40 @@
+.sponsors{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    animation: scroll 40s linear infinite;
+
+}
+    .sponsors-logo {
+        display: flex;
+        width: 241px;
+       height: 45.96px;
+      display: inline-block;
+      position: relative;
+      place-items: center;
+      flex-shrink: 0;
+      animation: moveSlideshow 12s linear infinite;
+      background-position: 0 -200px;
+    }
+
+    .sponsor-logo{
+      transform: translateZ(20px);
+      width: 100%;
+      animation: moveSlideshow 12s linear infinite;
+
+    } 
+  
+
+  @keyframes scroll{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(calc(-250px * 10));
+    }
+  } 
+
+  

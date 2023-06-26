@@ -2,8 +2,10 @@ import ClubsAndSocieties from '@/components/ClubsAndSocieties/ClubsAndSocieties'
 import Demo from '@/components/Demo/Demo'
 import HeroSection from '@/components/HeroSection/HeroSection'
 import StatsSection from '@/components/StatsSection/StatsSection'
+import Spons from '@/components/Spons/Spons'
 import Image from 'next/image'
 // import styles from './page.module.css'
+
 
 export default function Home() {
     return (
@@ -18,6 +20,9 @@ export default function Home() {
             </section>
             <section className='ClubsAndSocietiesSection'>
                 <ClubsAndSocieties />
+            </section>
+            <section className='Spons'>
+                <Spons />
             </section>
         </main>
     )

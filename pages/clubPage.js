@@ -1,3 +1,4 @@
+// Used for: Club Page 
 const { default: ClubPageHeader } = require("@/components/ClubPageHeader/ClubPageHeader");
 import '../styles/root/clubPage.scss'
 function ClubPage()
@@ -10,3 +11,4 @@ function ClubPage()
 }
 
 export default ClubPage;
+
