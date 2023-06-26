@@ -1,9 +1,12 @@
 import React from 'react';
 import './HeroSectionEvent.scss'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import styles from '@/styles/root/globals.scss'
 const HeroSectionEvent = () => {
     return (
         <div className= "HeroSection-EventContainer">
+            <img src='/Images/Events/color_element.png' className="HeroSection-mainpara-color-element"/>
+            <img src='/Images/Events/color_element_2.png' className='HeroSection-mainpara-color-element2' />
             <div className = "HeroSection-EventContainer-Hashtag">
                 <p className= "Hero-Hashtag">#EntrepreneurshipClub</p>
             </div>
@@ -29,8 +32,6 @@ const HeroSectionEvent = () => {
                     </p>
                 </div>
             </div>
-            {/*<img src='/Images/Events/color_element.png' className='HeroSection-mainpara-color-element' />*/}
-            {/*<img src='/Images/Events/color_element_2.png' className='HeroSection-mainpara-color-element2' />*/}
         </div>
     );
 };

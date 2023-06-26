@@ -163,35 +163,27 @@
 }
 
 .HeroSection-mainpara-color-element{
-  position: relative;
-  top: -30.5rem;
-  z-index: -500;
+  position: absolute;
   width: 30rem;
   background: none;
-  right: -5rem;
-  align-self: end;
-
+  left: 63rem;
+  // z-index: -1;
   @include respondAt(915px) {
-    // display: none;
-    width: 8rem;
-    top: -6rem;
-    left: 2.5rem;
+    width: 9rem;
+    height: 18rem;
+    left: 15.4rem;
+    margin-top: 10rem;
   }
 }
 
 .HeroSection-mainpara-color-element2{
-  position: relative;
-  top: -95.5rem;
-  z-index: -500;
+  position: absolute;
   width: 30rem;
+  left: 0rem;
   background: none;
-  right: 5rem;
-  align-self: start;
-
   @include respondAt(915px) {
-    // display: none;
-    width: 8rem;
-    top: -6rem;
-    left: 2.5rem;
+    width: 9rem;
+    height: 18rem;
+
   }
 }

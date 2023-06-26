@@ -1,5 +1,5 @@
 .EventCard-tray{
-  width: max-content;
+  //width: 12rem;
   height: max-content;
   display: flex;
   flex-direction: row;
@@ -28,11 +28,20 @@
   align-items: flex-start;
   gap: 30px;
 
+  @include respondAt(915px) {
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    //padding: 12.329px 19.018px;
+  }
+
 }
 
 .EventCard-club_details__img1{
+
   width: 22rem;
   height: 15rem;
+
 }
 
 .EventCard-club_details__img2{
