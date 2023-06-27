@@ -9,9 +9,9 @@
   display: flex;
   flex-wrap: wrap;
   @include respondAt(915px) {
-    margin-left: -0.5rem;
     margin-top: -2rem;
     margin-bottom: 2rem;
+    justify-content: center;
   }
 }
 
@@ -27,10 +27,13 @@
     align-self: center;
     border-radius: 1rem;
     @include respondAt(915px) {
-      width: calc(60%);
+      width: calc(80% - 7.2rem);
       // margin-right: 0.02rem;
+      margin-left: 0; 
+      justify-content: center;
       
     }
+    
     &__top {
       display: flex;
       align-items: center;
@@ -38,7 +41,7 @@
       @include respondAt(915px) {
         flex-direction: column;
         justify-content: center;
-        margin-left: -1rem;
+        // margin-left: -1rem;
       }
       &--imagCont {
         margin-right: 1rem;
@@ -86,10 +89,9 @@
       font-weight: 100;
       width: 22rem;
       @include respondAt(915px) {
-          width: 18rem;
+          width: calc(100%);
           text-align: center;
           justify-content: center;
-          margin-left: -1rem;
       }
     }
     &__bottom {
@@ -128,9 +130,9 @@
         padding: 0.5rem 1rem;
         border: 1px solid white;
         @include respondAt(915px) {
-          margin-left: 2rem;
-        padding: 0.5rem 0rem;
-          width: 9rem;
+          // margin-left: 1rem;
+        padding: 0.5rem 0.2rem;
+          width: 12rem;
         }
       }
     } 
