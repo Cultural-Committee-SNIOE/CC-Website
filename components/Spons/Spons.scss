@@ -1,40 +1,87 @@
-.sponsors{
-    display: flex;
-    width: 100%;
-    margin: 0px;
-    width: 100%;
+.Spons {
+  margin: 4rem 0 4rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  &__parent {
     position: relative;
-    transform: translate3d(0, 0, 0);
-    animation: scroll 40s linear infinite;
+    width: 100vw;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 2rem 0;
+    overflow-x: hidden;
+    &--element {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      left: 20rem;
+      top: 0%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      &--image {
+        margin: 0 2rem 0 2rem;
+        width: 25%;
+      }
+    }
+  }
+}
+
+.primary , .primary2 {
+  animation: primary 20s linear infinite;
+}
+
+.secondary  , .secondary2{
+  animation: secondary 20s linear infinite;
+  margin-left: 37rem;
+}
+
+.primary1 {
+  animation: primary 20s linear infinite;
+  animation-direction: reverse;
 
 }
-    .sponsors-logo {
-        display: flex;
-        width: 241px;
-       height: 45.96px;
-      display: inline-block;
-      position: relative;
-      place-items: center;
-      flex-shrink: 0;
-      animation: moveSlideshow 12s linear infinite;
-      background-position: 0 -200px;
-    }
 
-    .sponsor-logo{
-      transform: translateZ(20px);
-      width: 100%;
-      animation: moveSlideshow 12s linear infinite;
+.secondary1 {
+  animation: secondary 20s linear infinite;
+  margin-left: 37rem;
+  animation-direction: reverse;
+}
 
-    } 
-  
+@keyframes primary1 {
+  from {
+    left: -100%;
+  }
+  to {
+    left : 0%;
+  }
+}
 
-  @keyframes scroll{
-    0%{
-      transform: translateX(0);
-    }
-    100%{
-      transform: translateX(calc(-250px * 10));
-    }
-  } 
+@keyframes secondary1{
+  from {
+    left: 0%;
+  }
+  to {
+    left : 100%;
+  }
+}
 
-  
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
